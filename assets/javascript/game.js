@@ -1,42 +1,40 @@
-var words = ["beach", "mountain", "rollercoaster", "pool", "waterslide", "playground", "tennis", "volleyball"];
-var randomNum = [Math.floor(Math.random() * words.length)];
-var wordChoice = words[randomNum];
-var guessWord = [];
-var wins = 0;
-var wrong = [];
+//Generate random words
+var words = [
+    "beach",
+    "mountain",
+    "bicycle",
+    "swimming",
+    "waterslide",
+    "playground",
+    "tennis",
+    "volleyball"];
 
+var underScores = [];
 
-var showUnderscore = () => {
-    for(var i = 0; i < wordChoice.length; i++){
-        guessWord.push('_');
+for (var i = 0; i < random.length; i++){
+    var random = random[Math.floor(Math.random() * words.length)];
+    var underScoresRem = random.length;
+    underScores[i] = "_";
+}
+
+while (underScoresRem > 0) {
+    
+alert(underScores.join(" "));
+
+var playerGuess = prompt("Guess a letter");
+    if (guess === null){
+        break;
+    } else if (guess.length !== 1) {
+        alert("Please enter a single letter");
+    } else{
+        for (var j = 0; j < random.length; j++){
+            if (random[j] === playerGuess) {
+                underScores[j] = guess;
+                underScoresRem--;
+        }
     }
-    return guessWord;
-}
-
-document.onkeyup= function(event) {
-    var playerGuess = event.key;
-    var playerLetter = String.fromCharCode(event.playerGuess);
-};
-
-if (playerLetter.indexOf(wordChoice) > -1) {
-
-}
+    };
 
 
 
 
-/*
-var guessRemaining =0;
-var lettersGuessed = userGuess;
-
-document.onkeyup = function(event) {
-    var userGuess = event.key;
-
-    var html =
-        "<p>wins: " + wins + "</p>" +
-        "<p>guesses remaining: " + (lettersGuessed + wins) + "</p>" +
-        "<p>letters guessed: " + lettersGuessed + "</p>";
-
-
-    document.querySelector(".gameStart").innerHTML = html;
-}*/

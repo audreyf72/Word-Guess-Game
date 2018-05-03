@@ -3,21 +3,41 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Word Guess Game - Javascript HW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game of Thrones Word Guess</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 <body>
+<header></header>
 
-<script src="assets/javascript/game.js"></script>
+<h1>Game of Thrones</h1>
+<h2>Word Guess Game</h2>
 
-<p class="gameStart">Press any key to get started!</p> 
+<div class="row">   
 
-<div class="guessWord">_ _ _ _</div>  
-<div class="wins"></div>
-<div class="guessRemaining"></div>
-<div class="lettersGuessed"></div>
+    <div class="col-md-6">
+        
+        <div class="leftside">
+            <img id="wordpic" src="assets/images/cersei.jpg" alt="Word Pic">
+            <p id="wordpicTitle">Cersei Lannister</p>
+         </div>
 
+    <div class="col-md-6">
+    
+        <div class="gameTitles">Current Word</div>
+
+            <div id="underScores"></div>
+
+            <div class="gameTitles">Guesses Remaining</div>
+                <p id="lettersRem"></p>
+
+            <div class="gameTitles">Letters Already Guessed</div>    
+                <p id="lettersGuessed"></p>
+    </div>
+</div>
+
+<script src="assets/javascript/game3.js"></script>
 </body>
 </html>
