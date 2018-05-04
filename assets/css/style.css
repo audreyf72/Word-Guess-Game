@@ -10,7 +10,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain, cover;
-    height: 370px;
+    height: 310px;
     width: 100%;
     margin-bottom: 30px;
     
@@ -76,5 +76,5 @@ h2{
     font-size: 24pt;
     letter-spacing: .5em;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
