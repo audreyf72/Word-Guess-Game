@@ -11,9 +11,9 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain, cover;
-    height: 310px;
+    height: 240px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     
 }
 
@@ -33,22 +33,36 @@ h2{
     margin-top: 2px;
 }
 
-.row{
+.container{
+    position: relative;
     padding: 20px;
-    height: 350px;
+    min-height: 355px;
     width: 75%;
-    margin-top: 40px;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(228, 243, 249);
-    border: 3px solid rgb(163, 201, 215);
+    background-color: #efdab3;
+    border: 3px solid #c7935d;
 }
 
 .leftside{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     float: left;
-    align-content: center;
-    height: auto;
+    text-align: center;
+    width: 30%;
+}
+
+.rightside{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    float: right;
+    text-align: center;
+    width: 60%;
 }
 
 #wordpicTitle{

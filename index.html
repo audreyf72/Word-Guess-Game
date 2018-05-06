@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cinzel" rel="stylesheet">
 </head>
 <body>
@@ -17,32 +18,30 @@
 <h1>Game of Thrones</h1>
 <h2>Word Guess Game</h2>
 
-<div class="row">   
+<div class="container">   
 
-    <div class="col-md-6">
-        
         <div class="leftside">
+
             <img id="wordpic" src="assets/images/raven2.jpg" alt="Word Pic">
-            <p id="wordpicTitle">Valar Morghulis</p>
+            <p id="wordpicTitle"></p>
             <p id="wins"></p>
-         </div>
 
-    <div class="col-md-6">
-    
+         </div>     
+
+        <div class="rightside">
+
             <div class="gameTitles">Current Word</div>
-
                 <div id="underScores"></div>
 
             <div class="gameTitles">Guesses Remaining</div>
-                
                 <p id="lettersRem"></p>
 
-            <div class="gameTitles">Letters Already Guessed</div>    
-                
-                <p id="lettersGuessed"></p>
-    </div>
+            <div class="gameTitles">Letters Already Guessed</div>     
+               <p id="lettersGuessed"></p>
+        </div>
+
 </div>
 
-<script src="assets/javascript/game3.js"></script>
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
