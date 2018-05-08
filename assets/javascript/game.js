@@ -2,6 +2,7 @@
 var words = ["joffrey", "robert", "jon", "margaery", "theon", "cersei", "jaime", "tyrion",
 "sansa", "arya", "ygritte", "daenerys", "brienne", "catelyn", "melissandre", "littlefinger", "varys"];
 
+var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l','m', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 //Create variables for Letters Guessed, Guesses Left and Player Wins
 var lettersGuessed = [];
 var guessesLeft = 10;
@@ -13,35 +14,46 @@ var wordPic = "Valar Morghulis";
 var randomWord = words[Math.floor(Math.random() * words.length)];
 
 //Generate underscores corresponding to the length of the random word chosen
-var answers = [];
+var underscores = [];
+var radomWordSelected = [];
 for (var i = 0; i < randomWord.length; i++) {
-    answers[i] = "_";
+    underscores[i] = "_";
+    radomWordSelected = randomWord.split("");
+    
 }
-console.log(randomWord);
+console.log(radomWordSelected);
 
 //Keeps track of letters left to be guessed
 var remainingLetters = randomWord.length;
 
 //Display underscores in game (Result? Underscores display with the correct number of spaces for the randomWord but doesn't look right)
-document.getElementById("underScores").innerHTML = answers;
-console.log(answers);
+document.getElementById("underScores").innerHTML = underscores.join("");
+console.log(underscores);
 
 //Player guess
 // Determines which key was pressed (This is where I got stuck and couldn't figure out how to fix code beyond this point)
-document.onkeyup = function (event) {
-    var playerGuess = String.fromCharCode(event.onkeyup).toLowerCase();
+document.onkeyup = function(playerEntry) {
+    var playerGuess = playerEntry.key.toLowerCase();
+
+    console.log(playerGuess);
 
 //Check to see if player guess is correct
-    if (playerGuess.indexOf(randomWord) > -1) {
-        document.getElementById(lettersGuessed).innerHTML += playerGuess;
+    for (var j = 0; j < radomWordSelected.length; j++){
+        if (playerGuess === radomWordSelected[j]){
+        lettersGuessed.push(playerGuess);
 
-//If player guess is correct, put the letter in the index place of corresponding underscore        
-        var targetDiv = document.getElementById("underScores");
-        targetDiv.textContent = "";
-        var newDiv = document.createElement("div");
-        newDiv.textContent = playerGuess;
+//If player guess is correct, put the letter in the index place of corresponding underscore 
+        underscores[j]=playerGuess;
+        document.getElementById("underScores").innerHTML = underscores.join("");
+        guessesLeft--;
+        }
+        console.log("letterguess = " + underscores[j]);
+    }
+
+    console.log(guessesLeft);
+}              
         
-//If player completes the entire word add 1 to wins, change image, image title, and restart game        
+/*If player completes the entire word add 1 to wins, change image, image title, and restart game        
         wins ++;
         guessesLeft--;
         lettersGuessed = [];
@@ -71,14 +83,15 @@ document.onkeyup = function (event) {
 
 //Display letters guessed in the game so far
 var lettersGuessed = document.getElementById("lettersGuessed");
-lettersGuessed.textContent = lettersGuessed;
+lettersGuessed.textContent = lettersGuessed;*/
 
 //Display guesses left
-document.getElementById("lettersRem").innerHTML = guessesLeft;
+var letterRem = "<p>"+ guessesLeft +"</p>"
+document.querySelector("#lettersRem").innerHTML = letterRem;
 
 //Display player wins
 var htmlWins = "<p>Player Wins: " + wins + "</p>"
 document.querySelector("#wins").innerHTML = htmlWins;
 
-var wordPicHTML = "<p>" + wordPic + "</p>"
-document.querySelector("#wordpicTitle").innerHTML = wordPicHTML;
+// var wordPicHTML = "<p>" + wordPic + "</p>"
+// document.querySelector("#wordpicTitle").innerHTML = wordPicHTML;
