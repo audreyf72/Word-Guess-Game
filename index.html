@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Alegreya|Cinzel" rel="stylesheet">
 </head>
 <body>
 <header></header>
@@ -17,6 +17,29 @@
 <h2>The</h2>
 <h1>Game of Thrones</h1>
 <h2>Word Guess Game</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">| How to Play |</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>How to play</h3>
+        <p> Welcome to the Game of Thrones Word Guess Game. To start, you are given an undisclosed Game of Thrones character
+        name to guess. Blank spaces will indicate how many letters are in the name.
+        </p><br>
+        <p> Press a letter key to start. If the letter you chose is in the name, that letter will replace one or more
+        blank spaces in the character name. If the letter is not in the name, it will appear in the Wrong Letters Guessed section below. For each
+        incorrect guess, your guesses remaining will decrease. When guesses remaining reaches "0", the game will reset with a
+        new character name. If you guess the name correctly, an image of the character will appear and a sound bite from Game of Thrones will play.
+        </p><br>
+        <p> Good luck and enjoy the game!</p>
+    </div>
+  
+  </div>
 
 <div class="container">   
     <div id="row">
