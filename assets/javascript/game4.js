@@ -2,108 +2,108 @@
 var wordGuessGame = {
 
     // Object of all words that can be chosen, along with info such as their picture and a house clip.
-    wordsToPick: {
-      arya: {
-        picture: "arya.jpg",
-        house: "Stark",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e3_hate_them.wav"
-      },
-      brienne: {
-        picture: "brienne.jpg",
-        house: "Tarth",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e5_courage.wav"
-      },
-      catelyn: {
-        picture: "catelyn.jpg",
-        house: "Stark/Tully",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e1_done_well.wav"
-      },
-      cersei: {
-        picture: "cersei.jpg",
-        house: "Lannister",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e7_win_or_die.wav"
-      },
-      daenerys: {
-        picture: "daenerys.jpg",
-        house: "Targaryan",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e6_fire_cannot.wav"
-      },
-      hodor: {
-        picture: "hodor.jpg",
-        house: "Stark",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e4_hodor.wav"
-      },
-      jaime: {
-        picture: "jaime.jpg",
-        house: "Lannister",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e8_boring.wav"
-      },
-      jon: {
-        picture: "jon.jpg",
-        house: "Stark",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e4_defend_self.wav"
-      },
-      joffrey: {
-        picture: "joffrey.jpg",
-        house: "Baratheon",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e8_smile.wav"
-      },
-      stannis: {
-        picture: "stannis.jpg",
-        house: "Baratheon",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e5_hard_truths.wav"
-      },
-      baelish: {
-        picture: "littlefinger.jpg",
-        house: "None",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e1_family.wav"
-      },
-      margaery: {
-        picture: "margaery.jpg",
-        house: "Tyrell",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e3_games.wav"
-      },
-      melissandre: {
-        picture: "melissandre.jpg",
-        house: "Red Priestess",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e1_night_is_dark.wav"
-      },
-      robert: {
-        picture: "robert.jpg",
-        house: "Baratheon",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e5_being_king.wav"
-      },
-     theoron: {
-        picture: "theoron.jpg",
-        house: "Greyjoy",
-        preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e10_done_a_lot.wav"
-      },
-      bronn: {
-         picture: "bronn.jpg",
-         house: "None",
-         preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e9_plenty.wav"
-       },
-       sansa: {
-          picture: "sansa.jpg",
-          house: "Stark",
-          preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e1_please.wav"
-        },
-        tyrion: {
-           picture: "tyrion.jpg",
-           house: "Lannister",
-           preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e5_pays_his_debts.wav"
-         },
-         varys: {
-            picture: "varys.jpg",
-            house: "None",
-            preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e8_wisdom.wav"
-          },
-          eddard: {
-             picture: "ned.jpg",
-             house: "Stark",
-             preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e3_winter_coming3.wav"
-           }
+  wordsToPick: {
+    arya: {
+      picture: "arya.jpg",
+      house: "Stark",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e3_hate_them.wav"
     },
+    brienne: {
+      picture: "brienne.jpg",
+      house: "Tarth",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e5_courage.wav"
+    },
+    catelyn: {
+      picture: "catelyn.jpg",
+      house: "Stark/Tully",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e1_done_well.wav"
+    },
+    cersei: {
+      picture: "cersei.jpg",
+      house: "Lannister",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e7_win_or_die.wav"
+    },
+    daenerys: {
+      picture: "daenerys.jpg",
+      house: "Targaryan",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e6_fire_cannot.wav"
+    },
+    hodor: {
+      picture: "hodor.jpg",
+      house: "Stark",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e4_hodor.wav"
+    },
+    jaime: {
+      picture: "jaime.jpg",
+      house: "Lannister",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e8_boring.wav"
+    },
+    jon: {
+      picture: "jon.jpg",
+      house: "Stark",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e4_defend_self.wav"
+    },
+    joffrey: {
+      picture: "joffrey.jpg",
+      house: "Baratheon",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e8_smile.wav"
+    },
+    stannis: {
+      picture: "stannis.jpg",
+      house: "Baratheon",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e5_hard_truths.wav"
+    },
+    peter: {
+      picture: "littlefinger.jpg",
+      house: "Baelish",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e1_family.wav"
+    },
+    margaery: {
+      picture: "margaery.jpg",
+      house: "Tyrell",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e3_games.wav"
+    },
+    melissandre: {
+      picture: "melissandre.jpg",
+      house: "Red Priestess",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e1_night_is_dark.wav"
+    },
+    robert: {
+      picture: "robert.jpg",
+      house: "Baratheon",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e5_being_king.wav"
+    },
+    theoron: {
+      picture: "theoron.jpg",
+      house: "Greyjoy",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e10_done_a_lot.wav"
+    },
+    bronn: {
+      picture: "bronn.jpg",
+      house: "None",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e9_plenty.wav"
+    },
+    sansa: {
+      picture: "sansa.jpg",
+      house: "Stark",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e1_please.wav"
+    },
+    tyrion: {
+      picture: "tyrion.jpg",
+      house: "Lannister",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e5_pays_his_debts.wav"
+    },
+    varys: {
+      picture: "varys.jpg",
+      house: "None",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e8_wisdom.wav"
+    },
+    eddard: {
+      picture: "ned.jpg",
+      house: "Stark",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e3_winter_coming3.wav"
+    }
+  },
   
     // Variables that set the initial state of our wordGuess game.
     wordInPlay: null,
@@ -114,6 +114,7 @@ var wordGuessGame = {
     totalGuesses: 0,
     letterGuessed: null,
     wins: 0,
+    
   
     // The setupGame method is called when the page first loads.
     setupGame: function() {
@@ -134,7 +135,8 @@ var wordGuessGame = {
     // This function is run whenever the user guesses a letter..
     updatePage: function(letter) {
       // If the user has no guesses left, restart the game.
-      if (this.guessesLeft === 0) {
+      if (this.guessesLeft === 1) {
+        alert("You are out of guesses! Please try again.");
         this.restartGame();
       }
       // Otherwise...
@@ -177,7 +179,7 @@ var wordGuessGame = {
     // This function sets the initial guesses the user gets.
     processUpdateTotalGuesses: function() {
       // The user will get more guesses the longer the word is.
-      this.totalGuesses = this.lettersOfTheWord.length + 5;
+      this.totalGuesses = this.lettersOfTheWord.length + 3;
       this.guessesLeft = this.totalGuesses;
   
       // Render the guesses left to the page.
@@ -230,6 +232,11 @@ var wordGuessGame = {
       this.letterGuessed = null;
       this.setupGame();
       this.rebuildWordView();
+      setTimeout(function() { 
+      document.querySelector("#wordpic").innerHTML ="<img class='character' src='assets/images/raven2.jpg" + "' alt='" + "'>";
+      document.querySelector("#wordpicTitle").innerHTML = "Welcome!";
+      document.querySelector("#houseTitle").innerHTML = "Valar Morghulis";
+    }, 2000);
     },
   
     // Function that checks to see if the user has won.
@@ -259,7 +266,6 @@ var wordGuessGame = {
   
       // If win is true...
       if (win) {
-  
         // Increment wins.
         this.wins = this.wins + 1;
   
@@ -279,9 +285,14 @@ var wordGuessGame = {
         // Play an audio track of the band.
         var audio = new Audio(this.wordsToPick[this.wordInPlay].preview);
         audio.play();
+
+        setTimeout(function() { 
+        alert("Congratulations! You guessed it! Try again.");
+        }, 1000);
   
         // return true, which will trigger the restart of our game in the updatePage function.
         return true;
+
       }
       // If win is false, return false to the updatePage function. The game goes on!
       return false;
