@@ -17,18 +17,18 @@
 <h1>Game of Thrones</h1>
 <h2>Word Guess Game</h2>
 
-<div class="row">   
-
-    <div class="col-md-6">
-        
+<div class="container">   
+    <div id="row">
         <div class="leftside">
-            <img id="wordpic" src="assets/images/raven2.jpg" alt="Word Pic">
-            <p id="wordpicTitle">Valar Morghulis</p>
-            <p id="wins"></p>
-         </div>
 
-    <div class="col-md-6">
-    
+            <div id="wordpic"><img class'character' src='assets/images/raven2.jpg' alt='GOT Character'></div>
+            <p id="wordpicTitle">Welcome!</p>
+            <p id="houseTitle">Valar Morghulis</p>
+            <div id="wins">Player Wins: 0</div>
+         </div>     
+
+        <div class="rightside">
+
             <div class="gameTitles">Current Word</div>
 
                 <div id="underScores"></div>
@@ -37,12 +37,13 @@
                 
                 <p id="lettersRem"></p>
 
-            <div class="gameTitles">Letters Already Guessed</div>    
+            <div class="gameTitles">Wrong Letters Guessed</div>    
                 
-                <p id="lettersGuessed"></p>
+               <p id="lettersGuessed"></p>
+        </div>
     </div>
 </div>
 
-<script src="assets/javascript/game3.js"></script>
+<script src="assets/javascript/game4.js"></script>
 </body>
 </html>
