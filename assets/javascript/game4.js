@@ -248,11 +248,6 @@ var wordGuessGame = {
       this.letterGuessed = null;
       this.setupGame();
       this.rebuildWordView();
-      setTimeout(function() { 
-      document.querySelector("#wordpic").innerHTML ="<img class='character' src='assets/images/raven2.jpg" + "' alt='" + "'>";
-      document.querySelector("#wordpicTitle").innerHTML = "Welcome!";
-      document.querySelector("#houseTitle").innerHTML = "Valar Morghulis";
-    }, 4000);
     },
   
     // Function that checks to see if the user has won.
@@ -284,6 +279,20 @@ var wordGuessGame = {
       if (win) {
         // Increment wins.
         this.wins = this.wins + 1;
+
+        var modal2 = document.getElementById('myModal2');
+        var span = document.getElementsByClassName("close2")[0];
+
+        modal2.style.display = "block";
+
+        span.onclick = function() {
+          modal2.style.display = "none";
+      }
+        window.onclick = function(event) {
+          if (event.target == modal2) {
+              modal2.style.display = "none";
+          }
+      }
   
         // Update wins on the page.
         document.querySelector("#wins").innerHTML = "<p>Player Wins: " + this.wins + "</p>";
@@ -301,20 +310,6 @@ var wordGuessGame = {
         // Play an audio track of the character.
         var audio = new Audio(this.wordsToPick[this.wordInPlay].preview);
         audio.play();
-
-        var modal2 = document.getElementById('myModal2');
-        var span = document.getElementsByClassName("close2")[0];
-
-        modal2.style.display = "block";
-
-        span.onclick = function() {
-          modal2.style.display = "none";
-      }
-        window.onclick = function(event) {
-          if (event.target == modal2) {
-              modal2.style.display = "none";
-          }
-      }
 
         // return true, which will trigger the restart of our game in the updatePage function.
         return true;
