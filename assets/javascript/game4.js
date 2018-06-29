@@ -55,9 +55,9 @@ var wordGuessGame = {
       house: "Baratheon",
       preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e5_hard_truths.wav"
     },
-    peter: {
+    littlefinger: {
       picture: "littlefinger.jpg",
-      house: "Baelish",
+      house: "None",
       preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e1_family.wav"
     },
     margaery: {
@@ -252,7 +252,7 @@ var wordGuessGame = {
       document.querySelector("#wordpic").innerHTML ="<img class='character' src='assets/images/raven2.jpg" + "' alt='" + "'>";
       document.querySelector("#wordpicTitle").innerHTML = "Welcome!";
       document.querySelector("#houseTitle").innerHTML = "Valar Morghulis";
-    }, 2000);
+    }, 4000);
     },
   
     // Function that checks to see if the user has won.
@@ -288,17 +288,17 @@ var wordGuessGame = {
         // Update wins on the page.
         document.querySelector("#wins").innerHTML = "<p>Player Wins: " + this.wins + "</p>";
   
-        // Update the song title and band on the page.
+        // Update the character info on the page.
         document.querySelector("#wordpicTitle").innerHTML = this.wordInPlay;
         document.querySelector("#houseTitle").innerHTML = "House Affiliation: " + this.wordsToPick[this.wordInPlay].house;
   
-        // Update the image of the band on the page.
+        // Update the image of the character on the page.
         document.querySelector("#wordpic").innerHTML =
           "<img class='character' src='assets/images/" +
           this.wordsToPick[this.wordInPlay].picture + "' alt='" +
           this.wordsToPick[this.wordInPlay].house + "'>";
   
-        // Play an audio track of the band.
+        // Play an audio track of the character.
         var audio = new Audio(this.wordsToPick[this.wordInPlay].preview);
         audio.play();
 

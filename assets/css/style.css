@@ -181,7 +181,7 @@ img {
 .modal-content {
     position: relative;
     background-color: #fefefe;
-    margin: 20% auto; /* 15% from the top and centered */
+    margin: 15% auto; /* 15% from the top and centered */
     padding: 80px;
     border: 1px solid #888;
     font-size: 18pt;
@@ -194,7 +194,7 @@ img {
 .modal-content2 {
     position: relative;
     margin: 25% 50%;
-    background-color: #fefefe;
+    background-color: rgba(250,250,250,1);
     padding: 40px;
     border: 1px solid #888;
     font-size: 18pt;
