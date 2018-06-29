@@ -138,7 +138,21 @@ var wordGuessGame = {
     updatePage: function(letter) {
       // If the user has no guesses left, restart the game.
       if (this.guessesLeft === 1) {
-        alert("You are out of guesses! Please try again.");
+
+        var modal3 = document.getElementById('myModal3');
+        var span = document.getElementsByClassName("close3")[0];
+
+        modal3.style.display = "block";
+
+        span.onclick = function() {
+          modal3.style.display = "none";
+      }
+        window.onclick = function(event) {
+          if (event.target == modal3) {
+              modal3.style.display = "none";
+          }
+      }
+        
         this.restartGame();
       }
       // Otherwise...
@@ -288,10 +302,20 @@ var wordGuessGame = {
         var audio = new Audio(this.wordsToPick[this.wordInPlay].preview);
         audio.play();
 
-        setTimeout(function() { 
-        alert("Congratulations! You guessed it! Try again.");
-        }, 1000);
-  
+        var modal2 = document.getElementById('myModal2');
+        var span = document.getElementsByClassName("close2")[0];
+
+        modal2.style.display = "block";
+
+        span.onclick = function() {
+          modal2.style.display = "none";
+      }
+        window.onclick = function(event) {
+          if (event.target == modal2) {
+              modal2.style.display = "none";
+          }
+      }
+
         // return true, which will trigger the restart of our game in the updatePage function.
         return true;
 
