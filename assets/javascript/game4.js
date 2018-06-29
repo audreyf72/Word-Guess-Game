@@ -12,7 +12,7 @@ var wordGuessGame = {
     },
     brienne: {
       picture: "brienne.jpg",
-      house: "Tarth",
+      house: "Stark",
       preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e5_courage.wav"
     },
     catelyn: {
@@ -28,7 +28,7 @@ var wordGuessGame = {
     daenerys: {
       picture: "daenerys.jpg",
       house: "Targaryan",
-      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e6_fire_cannot.wav"
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e6_take_mine.wav"
     },
     hodor: {
       picture: "hodor.jpg",
@@ -43,12 +43,12 @@ var wordGuessGame = {
     jon: {
       picture: "jon.jpg",
       house: "Stark",
-      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e4_defend_self.wav"
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e2_risk_lives.wav"
     },
     joffrey: {
       picture: "joffrey.jpg",
       house: "Baratheon",
-      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e8_smile.wav"
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e10_fingers_tongue.wav"
     },
     stannis: {
       picture: "stannis.jpg",
@@ -57,7 +57,7 @@ var wordGuessGame = {
     },
     littlefinger: {
       picture: "littlefinger.jpg",
-      house: "None",
+      house: "Arryn",
       preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e1_family.wav"
     },
     margaery: {
@@ -78,11 +78,11 @@ var wordGuessGame = {
     theoron: {
       picture: "theoron.jpg",
       house: "Greyjoy",
-      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e10_done_a_lot.wav"
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e7_cruel.wav"
     },
     bronn: {
       picture: "bronn.jpg",
-      house: "None",
+      house: "Lannister",
       preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e9_plenty.wav"
     },
     sansa: {
@@ -97,8 +97,18 @@ var wordGuessGame = {
     },
     varys: {
       picture: "varys.jpg",
-      house: "None",
+      house: "Targaryan",
       preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s1e8_wisdom.wav"
+    },
+    ygritte: {
+      picture: "ygritte.jpg",
+      house: "Free Folk",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e7_be_free.wav"
+    },
+    jorah: {
+      picture: "jorah.jpg",
+      house: "Targaryan",
+      preview: "http://www.wavsource.com/snds_2018-06-03_5106726768923853/tv/game_of_thrones/got_s2e7_help.wav"
     },
     eddard: {
       picture: "ned.jpg",
