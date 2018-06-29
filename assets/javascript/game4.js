@@ -204,8 +204,8 @@ var wordGuessGame = {
   
     // This function sets the initial guesses the user gets.
     processUpdateTotalGuesses: function() {
-      // The user will get more guesses the longer the word is.
-      this.totalGuesses = this.lettersOfTheWord.length + 1;
+      // The user will get more guesses the longer the word is plus 2.
+      this.totalGuesses = this.lettersOfTheWord.length + 2;
       this.guessesLeft = this.totalGuesses;
   
       // Render the guesses left to the page.
