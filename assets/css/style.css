@@ -8,6 +8,10 @@ body{
     color: black;
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
+    background-image: url("../images/3eyedraven.png");
+    background-repeat: no-repeat;
+    background-position-y: 725px;
+    background-size: 100%;
 }
 
 header{
