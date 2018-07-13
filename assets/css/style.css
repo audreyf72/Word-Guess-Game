@@ -13,7 +13,7 @@ body, html{
     background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: center;
-    background-size: contain;
+    background-size: 100%;
 }
 
 header{
